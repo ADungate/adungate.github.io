@@ -59,32 +59,44 @@
         </div>
       </li> -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
   </div>
 </nav>
 
 <main role="main">
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <div class="jumbotron" 
+  style="background: url(./images/simulations.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+    
     <div class="container">
-      <h1 class="display-3">Projects</h1>
+      <h1 class="display-3 text-white">Projects</h1>
       <p>Here is a scrapbook for some of my favourite projects developed in my spare time.  
         All of these project were developed outside of my paid work and/or classes. </p>
       <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
     </div>
   </div>
 
+  <!-- The Bunny -->
   <div class="container">
     <div class="row">
       <div class="col-md-8 themed-grid-col"> 
-        <h2>Self-Driving Pacing Car</h2>
-        <p><b>April 2017 - September 2019</b></p>
+        <h2>Self-Driving Pacing Car</h2> 
+        <!-- <h5>Personal Project</h5> -->
+        <p><b>April 2017 - September 2018</b></p>
         <p> We built a self driving robot to pace athletes around a running track.</p> 
-        <p> As avid track runners, my friends and I wanted a robot that could guide runners through perfectly-paced lap times.  Pacing is extremely important in running, and human pacers can rarely run perfectly-split lap times</p>
+        <p> As competitive track runners, my friends and I wanted a robot that could guide runners through perfectly-paced lap times.   As a team of 5, we built a small electric car, and taught it how to drive itself around a 400m track.  
+          <br>
+          <b>  Technical Skills:  </b> 
+          We developed our own navigation system, allowing the car to accurately stay between running lanes while driving at high speeds through any outdoor weather conditions.    We used a PIXY-cam camera for object/line detection, and we integrated it with infrared sensors, LCD, keypad, motor driver and a temperature sensor.  We used data from the camera and infrared sensors to develop a PID navigation system, enabling the car to get back on track even if it lost the line it was following. 
+          <br>
+          <b>  Project Management Skills:  </b> 
+          The project was also a fun opportunity to practice defining project plans and timelines, managing finances and establishing systems for ordering components.  Working with physics and engineering students, it was rewarding to see all our skillsets compound to bring our dream to life.
+          </p>
+          <br>
       </div>
       <div class="col-md-4 themed-grid-col">
         <video class="video-fluid z-depth-1" width="320" height="240" autoplay loop controls muted>
@@ -93,47 +105,70 @@
       </div>
     </div>
   
+    <!-- Rocket -->
+    <!-- Add link to team site -->
     <div class="row">
       <div class="col-md-8 themed-grid-col"> 
-        <h2>UBC Rocket Engineering Design Team</h2>
-        <p> We built a self driving robot to pace athletes around a running track.</p> 
-        <p> As avid track runners, my friends and I wanted a robot that could guide runners through perfectly-paced lap times.  Pacing is extremely important in running, and </p>
+        <h2>UBC Rocket Engineering Design Team</h2> 
+        <p><b>April 2017 - September 2019</b></p>
+        <p> We build super-sonic rockets to compete in international competitions, carrying on-board experiments above 30’000ft.</p> 
+        <p> UBC Rocket is a fast-paced student engineering design team at the University of British Columbia.  With over 500 applicants to the team every year, the team is extremely competitive.  As a kid I dreamt of being a rocket scientist, so in university I decided to dedicate my time outside of class to the Rocket team.
+          <br>
+          Throughout my 2+ years on the team, I worked in many areas of the team:
+          <p>
+          <b>On-Board Experiments</b><br>
+          I had the honour of leading the On-Board Experiments team in my first year on the team.  Among other experiments, we built a muon detector to measure the rocket’s altitude in flight. Cosmic rays are constantly bombarding our atmosphere, produced by supernovas and other fiery explosion in the universe. When these cosmic rays hit our atmosphere, they decay into a slew of particles, including muons!  The higher you are, the more muons there are flying around.   Muons last only a fraction of a second, but we can catch them with a special material that emits a very faint flash of light when a muon crashes into it.  We count the flashes of light, and calculate the rate at which muons are hitting our device. The idea was to use the rate of muon collisions to determine altitude, and test its accuracy as a novel altimeter technology.  Unfortunately, the rocket carrying this experiment tore itself to shreds shortly after breaking the sound barrier, destroying all traces of our experiment :( . The good news is we caught the disastrous moment on camera:
+          <!-- Launch video, does not work on firefox?? -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qybrfn_pUFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br> (Note: This video will not play on Firefox)
+          </p>
+          <p><b>Liquid Propulsion Systems Development</b> <br>
+            In the interest of innovation, there is a division of the team designing and building a liquid propulsion system from scratch.  (It’s a lot harder than it sounds).  Liquid propulsion engines are a lot more powerful than solid engines, but they are also way more intricate, delicate, and dangerous.  Working with a particle physics professor from UBC, we designed, simulated, tested, and began building our engine.  At one point, we got to sit down with an aerospace engineer from the Canadian Space Agency as he validated our design (so cool!). I was responsible for parts & materials acquisition. This involved a lot of problem solving and critical thinking; it’s surprisingly hard for a 19-year-old kid to get his hands-on explosive fluids and high pressure plumbing.  To make matters worse, as a student team we have an extremely limited budget, and our rockets tend to use around $30’000 in parts for each rocket.  I became an expert at reaching out for sponsorships and finding low-cost alternatives to high tech solutions.  My solutions included using high-performance paintball canisters to pressurize our engine, and collaborating with mechanical engineering students to manufacture our own components whenever possible.
+          </p>
+          <p><b>Software Development & Avionics</b> <br>
+            Our rockets have computer systems to control each step of the rocket’s launch, flight, parachute deployments, and the on-board experiments.  I developed software to transmit flight data from the rocket's computer to a user-friendly UI on a ground station.  I learnt and applied the use of threads to ensure data protection and program speed.  It was fun collaborating with hardware programmers, and optimising our software around the limitations of our hardware.
+          </p>
+          <br>
+        </p>
       </div>
       <div class="col-md-4 themed-grid-col">
-        <img src="images/rocketTeam.JPG" class="img-fluid" alt="Responsive image">
+        <img src="./images/rocketTeam.JPG" class="img-fluid" alt="Responsive image">
         <rect width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Learn More About the Team &raquo;</a></p>
+        <br><br>
       </div>
     </div>
 
 
 
-    <!-- Project #1-->
+    <!-- HackSeq19-->
     <div class="row">
-      <div class="container">
-        <h2>Self-Driving Pacing Car</h2>
-        <p> We built a self driving robot to pace athletes around a running track.</p> 
-        <p> As avid track runners, my friends and I wanted a robot that could guide runners through perfectly-paced lap times.  Pacing is extremely important in running, and </p>
-        <div class="media">
-          <img class="align-self-start mr-3" src="/Users/alexander/Documents/GitHub/adungate.github.io/images/theBunny.mp4" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="mt-0">Top-aligned media</h5>
-            <p>Test</p>
-            <p>does it work?</p>
-          </div>
-        </div>
+      <div class="col-md-8 themed-grid-col">
+        <h2>Virtual Reality for Single-Cell Data Exploration </h2>
+        <p><b>October 2019 - HackSeq19 hackathon</b></p>
+        <p> Collaborated with Harvard researchers to visualize single-cell genomic data in virtual reality.</p> 
+        <p> 
+          Genomic sequencing is getting so accurate that researchers can now precisely determine the DNA sequence of a single cell.  By sequencing many cells individually, researchers can track the genetic differences between cells and between generations of cells.  But how on earth would you visualize this?  This is a new field of measurement, a mind-bending concept to visualize.
 
-        
-      </div>
-      <!-- <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          During the HackSeq19 hackathon, I worked with researchers from Harvard to figure out how to visualize this data in an intuitive and insightful way.   We brainstormed and tested many different concepts for this type of data visualization, and decided create a 3D graph that makes it easy to see defined cell lineages, as well as genetic outliers.
+
+          <br><br>
+          We used A-Frame as our VR framework, and the Harvard lab uses machine learning to group the cell genomes into lineages based on their DNA.  The goal is for researchers to upload their own datasets, and our software will map the data into a 3D space, enabling the viewer to explore, interact, and “walkthrough” the different cell lineages.  
+          Placing heavy emphasis on user experience throughout our development, we made sure that the VR world was easy to navigate from a laptop, phone, or VR headset. 
+          <br><br>
+          Our hackathon project was so successful, the Harvard lab published a paper based about it!  
+          <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Read the Paper Here &raquo;</a></p>
+          (You’ll find my name in the “Acknowledgements” section)
+        </p>
+      
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div> -->
+        <img src="./images/VR_Nerds.png" class="img-fluid" alt="Responsive image">
+        <rect width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <p>Here's a photo of me looking at our freshly built VR world through a Google Cardboard VR headset.</p>
+        <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Visit the Project Website &raquo;</a></p>
+      </div>
+    <br><br>
     </div>
 
     <hr>
