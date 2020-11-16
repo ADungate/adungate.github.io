@@ -33,20 +33,21 @@
     <link href="jumbotron.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Alexander</a>
+    <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="index.html">Alexander</a> 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li> -->
+      <li class="nav-item active">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li> -->
@@ -70,47 +71,51 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron" 
-  style="background: url(./images/simulations.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+  style="background: url(./images/studying.jpeg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
     
-    <div class="container">
+    <div class="container text-white">
       <h1 class="display-3 text-white">Projects</h1>
-      <p>Here is a scrapbook for some of my favourite projects developed in my spare time.  
-        All of these project were developed outside of my paid work and/or classes. </p>
+      <!-- <p style="background-color:rgba(15, 63, 6, 0.836);">  -->
+        <p> Here is a scrapbook for some of my favourite projects developed in my spare time.  <br>
+         All of these project were developed outside of my paid work and/or classes. </p>
       <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
     </div>
   </div>
 
   <!-- The Bunny -->
   <div class="container">
+    <div> <hr> </div>
     <div class="row">
       <div class="col-md-8 themed-grid-col"> 
-        <h2>Self-Driving Pacing Car</h2> 
+        <h2>Self-Driving Pacing Car - "The Bunny"</h2> 
         <!-- <h5>Personal Project</h5> -->
         <p><b>April 2017 - September 2018</b></p>
         <p> We built a self driving robot to pace athletes around a running track.</p> 
-        <p> As competitive track runners, my friends and I wanted a robot that could guide runners through perfectly-paced lap times.   As a team of 5, we built a small electric car, and taught it how to drive itself around a 400m track.  
-          <br>
-          <b>  Technical Skills:  </b> 
-          We developed our own navigation system, allowing the car to accurately stay between running lanes while driving at high speeds through any outdoor weather conditions.    We used a PIXY-cam camera for object/line detection, and we integrated it with infrared sensors, LCD, keypad, motor driver and a temperature sensor.  We used data from the camera and infrared sensors to develop a PID navigation system, enabling the car to get back on track even if it lost the line it was following. 
-          <br>
-          <b>  Project Management Skills:  </b> 
-          The project was also a fun opportunity to practice defining project plans and timelines, managing finances and establishing systems for ordering components.  Working with physics and engineering students, it was rewarding to see all our skillsets compound to bring our dream to life.
+        <p> As competitive track runners, my friends and I wanted a robot that could guide runners through perfectly-paced lap times.   As a team of 5, we built a small electric car and taught it how to drive itself around a 400m track.  </p>
+          <p>
+            <b>  Technical Skills:  </b> 
+            We developed our own navigation system, allowing the car to accurately stay between running lanes while driving at high speeds through any outdoor weather conditions.    We used a PIXY-cam camera for object/line detection, and we integrated it with infrared sensors, LCD, keypad, motor driver and a temperature sensor.  We used data from the camera and infrared sensors to develop a PID navigation system, enabling the car to get back on track even if it lost the line it was following. 
+            <br>
+            <b>  Project Management Skills:  </b> 
+            The project was also a fun opportunity to practice defining project plans and timelines, managing finances and establishing systems for ordering components.  Working with physics and engineering students, it was rewarding to see all our skillsets compound to bring our dream to life.
           </p>
           <br>
       </div>
       <div class="col-md-4 themed-grid-col">
-        <video class="video-fluid z-depth-1" width="320" height="240" autoplay loop controls muted>
+      <p>
+        <video class="video-fluid z-depth-1" width="350" height="200" autoplay loop controls muted>
           <source src="./images/theBunny.mp4" type="video/mp4" />
         </video>
+        The Bunny being tested in it's early stages.  The laptop shows the image analysis and line tracking performed by the onboard navigation software.</p>
       </div>
     </div>
   
     <!-- Rocket -->
-    <!-- Add link to team site -->
+    <div> <hr> </div> <!-- draws line across page -->
     <div class="row">
       <div class="col-md-8 themed-grid-col"> 
         <h2>UBC Rocket Engineering Design Team</h2> 
-        <p><b>April 2017 - September 2019</b></p>
+        <p><b>January 2018 - May 2020</b></p>
         <p> We build super-sonic rockets to compete in international competitions, carrying on-board experiments above 30’000ft.</p> 
         <p> UBC Rocket is a fast-paced student engineering design team at the University of British Columbia.  With over 500 applicants to the team every year, the team is extremely competitive.  As a kid I dreamt of being a rocket scientist, so in university I decided to dedicate my time outside of class to the Rocket team.
           <br>
@@ -119,11 +124,14 @@
           <b>On-Board Experiments</b><br>
           I had the honour of leading the On-Board Experiments team in my first year on the team.  Among other experiments, we built a muon detector to measure the rocket’s altitude in flight. Cosmic rays are constantly bombarding our atmosphere, produced by supernovas and other fiery explosion in the universe. When these cosmic rays hit our atmosphere, they decay into a slew of particles, including muons!  The higher you are, the more muons there are flying around.   Muons last only a fraction of a second, but we can catch them with a special material that emits a very faint flash of light when a muon crashes into it.  We count the flashes of light, and calculate the rate at which muons are hitting our device. The idea was to use the rate of muon collisions to determine altitude, and test its accuracy as a novel altimeter technology.  Unfortunately, the rocket carrying this experiment tore itself to shreds shortly after breaking the sound barrier, destroying all traces of our experiment :( . The good news is we caught the disastrous moment on camera:
           <!-- Launch video, does not work on firefox?? -->
+          <p style="color: dimgray;">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/qybrfn_pUFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br> (Note: This video will not play on Firefox)
+          <br>(Note: This video will not play on Firefox browsers)</p>
           </p>
           <p><b>Liquid Propulsion Systems Development</b> <br>
-            In the interest of innovation, there is a division of the team designing and building a liquid propulsion system from scratch.  (It’s a lot harder than it sounds).  Liquid propulsion engines are a lot more powerful than solid engines, but they are also way more intricate, delicate, and dangerous.  Working with a particle physics professor from UBC, we designed, simulated, tested, and began building our engine.  At one point, we got to sit down with an aerospace engineer from the Canadian Space Agency as he validated our design (so cool!). I was responsible for parts & materials acquisition. This involved a lot of problem solving and critical thinking; it’s surprisingly hard for a 19-year-old kid to get his hands-on explosive fluids and high pressure plumbing.  To make matters worse, as a student team we have an extremely limited budget, and our rockets tend to use around $30’000 in parts for each rocket.  I became an expert at reaching out for sponsorships and finding low-cost alternatives to high tech solutions.  My solutions included using high-performance paintball canisters to pressurize our engine, and collaborating with mechanical engineering students to manufacture our own components whenever possible.
+            In the interest of innovation, there is a division of the team designing and building a liquid propulsion system from scratch.  (It’s a lot harder than it sounds).  Liquid propulsion engines are a lot more powerful than solid engines, but they are also way more intricate, delicate, and dangerous.  Working with a particle physics professor from UBC, we designed, simulated, tested, and began building our engine.  At one point, we got to sit down with an aerospace engineer from the Canadian Space Agency as he validated our design (so cool!). 
+            <br>
+            I was responsible for parts & materials acquisition. This involved a lot of problem solving and critical thinking; it’s surprisingly hard for a 19-year-old kid to get his hands-on explosive fluids and high pressure plumbing.  To make matters worse, as a student team we have an extremely limited budget, and our rockets tend to each use around $30’000 in parts.  I became an expert at reaching out for sponsorships and finding low-cost alternatives to high tech solutions.  My solutions included using high-performance paintball canisters to pressurize our engine, and collaborating with mechanical engineering students to manufacture our own components whenever possible.
           </p>
           <p><b>Software Development & Avionics</b> <br>
             Our rockets have computer systems to control each step of the rocket’s launch, flight, parachute deployments, and the on-board experiments.  I developed software to transmit flight data from the rocket's computer to a user-friendly UI on a ground station.  I learnt and applied the use of threads to ensure data protection and program speed.  It was fun collaborating with hardware programmers, and optimising our software around the limitations of our hardware.
@@ -134,7 +142,8 @@
       <div class="col-md-4 themed-grid-col">
         <img src="./images/rocketTeam.JPG" class="img-fluid" alt="Responsive image">
         <rect width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-        <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Learn More About the Team &raquo;</a></p>
+        <p>Our team photo.  Can you spot me?  Hint: I'm holding up the SKYPILOT rocket.
+          <br><a class="btn btn-secondary" href="http://www.ubcrocket.com/" target="_blank" role="button">Learn More About the Team &raquo;</a></p>
         <br><br>
       </div>
     </div>
@@ -142,6 +151,7 @@
 
 
     <!-- HackSeq19-->
+    <div> <hr> </div>
     <div class="row">
       <div class="col-md-8 themed-grid-col">
         <h2>Virtual Reality for Single-Cell Data Exploration </h2>
@@ -156,9 +166,10 @@
           We used A-Frame as our VR framework, and the Harvard lab uses machine learning to group the cell genomes into lineages based on their DNA.  The goal is for researchers to upload their own datasets, and our software will map the data into a 3D space, enabling the viewer to explore, interact, and “walkthrough” the different cell lineages.  
           Placing heavy emphasis on user experience throughout our development, we made sure that the VR world was easy to navigate from a laptop, phone, or VR headset. 
           <br><br>
-          Our hackathon project was so successful, the Harvard lab published a paper based about it!  
-          <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Read the Paper Here &raquo;</a></p>
-          (You’ll find my name in the “Acknowledgements” section)
+          Our hackathon project was so successful, the Harvard lab continued to work on it and published a paper based about it!
+          
+          (You’ll find my name in the “Acknowledgements” section.) <br>
+          <a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Read the Paper Here &raquo;</a>
         </p>
       
       </div>
@@ -170,11 +181,8 @@
       </div>
     <br><br>
     </div>
-
     <hr>
-
-  </div> <!-- /container -->
-
+  </div> <!-- /end of container -->
 </main>
 
   <!-- FOOTER -->
