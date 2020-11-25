@@ -73,22 +73,86 @@
 
 <main role="main">
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <!-- Main jumbotron for projects schpeel -->
   <div class="jumbotron" 
   style="background: url(./images/studying.jpeg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-    
     <div class="container text-white">
       <h1 class="display-3 text-white">Projects</h1>
       <!-- <p style="background-color:rgba(15, 63, 6, 0.836);">  -->
         <p> Here is a scrapbook for some of my favourite projects developed in my spare time.  <br>
          All of these project were developed outside of my paid work and/or classes. </p>
       <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      <a id="sapApp"></a> <!-- ID tag has to be placed her to allow room for the nav bar. -->
     </div>
   </div>
-
-  <!-- The Bunny -->
+  
+  <!-- Container for all projects -->
   <div class="container">
-    <div> <hr> </div>
+    <hr>
+
+    <!-- The AR/VR d-shop App -->
+    
+    <div class="row">
+      <div class="col-md-8 themed-grid-col"> 
+        <h2>SAP Vancouver AR/VR Office Tour App</h2> 
+        <p><b>September 2020 - Present</b></p>
+        <p>Volunteering for SAP’s internal innovation lab “d-Shop”, I lead a team of 6 as we build an augmented reality app to showcase the Vancouver office. </p>
+        <p>The SAP Vancouver office has over 1400 employees and fills an entire city block with lots of pedestrian traffic passing by.  There are QR codes around the building that can be scanned with a phone, bringing up our app.  The app engages users with various augmented reality experiences that illustrate the amazing work taking place inside the office.
+            <br><br>
+          <b>Project Management Skills:</b>
+          As the Team Lead, I am responsible for bringing this project to life from inception to release, all in just 4 months.  I started by recruiting talented interns through virtual presentations and outreach events, and creating a project charter. Throughout the project I plan sprints, and manage development schedules & timelines.  I lead feature definition and design, and coordinate UX designers and developers to ensure our planned features are feasible.  
+          <br><br>
+          The biggest challenge is keeping the team moving quickly when we are limited to one team meeting a week. Everyone on the team is volunteering their time outside of their role at SAP, so we are each limited to very few hours of effort per week.  It has been a great team management exercise for me, since it is critical that I optimize our team’s few hours of effort every week.  I do this by connecting with each team member individually before our team meetings, making sure they have what they need to make the most of our meeting time.  I maintain a Kanban board to organize everyone’s tasks, and touch base with everyone throughout the week to make sure no one is blocked.  I am also in constant contact with key stakeholders and SAP staff to ensure our project meets their expectations and timelines.
+          <br><br>
+          Overall, I absolutely love working on this project.  It is incredibly rewarding to see my management techniques have a direct positive impact on the team and the development schedule.  This project has confirmed my passion for program/project/product management roles, and I hope to find internships that are centered around roles like this.
+        </p> 
+        <br>
+      </div>
+      <div class="col-md-4 themed-grid-col">
+        <img src="./images/devWhiteBoard.jpg" class="img-fluid" alt="Responsive image">
+        <rect width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <p>This project is still in progress, but it should be live by mid-December.  I will post the link here, check back soon!</p>
+        <!-- <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Visit the Project Website &raquo;</a></p> -->
+      </div>
+    </div>
+
+      <hr>
+
+    <!-- HackSeq19-->
+    <a id="hackseq"></a>
+    <div class="row">
+      <div class="col-md-8 themed-grid-col">
+        <h2>Virtual Reality for Single-Cell Data Exploration </h2>
+        <p><b>October 2019 - HackSeq19 hackathon</b></p>
+        <p> Collaborated with Harvard researchers to visualize single-cell genomic data in virtual reality.</p> 
+        <p> 
+          Genomic sequencing is getting so accurate that researchers can now precisely determine the DNA sequence of a single cell.  By sequencing many cells individually, researchers can track the genetic differences between cells and between generations of cells.  But how on earth would you visualize this?  This is a new field of measurement, a mind-bending concept to visualize.
+
+          During the HackSeq19 hackathon, I worked with researchers from Harvard to figure out how to visualize this data in an intuitive and insightful way.   We brainstormed and tested many different concepts for this type of data visualization, and decided create a 3D graph that makes it easy to see defined cell lineages, as well as genetic outliers.
+
+          <br><br>
+          We used A-Frame as our VR framework, and the Harvard lab uses machine learning to group the cell genomes into lineages based on their DNA.  The goal is for researchers to upload their own datasets, and our software will map the data into a 3D space, enabling the viewer to explore, interact, and “walkthrough” the different cell lineages.  
+          Placing heavy emphasis on user experience throughout our development, we made sure that the VR world was easy to navigate from a laptop, phone, or VR headset. 
+          <br><br>
+          Our hackathon project was so successful, the Harvard lab continued to work on it and published a paper based about it!
+          
+          (You’ll find my name in the “Acknowledgements” section.) <br>
+          <a class="btn btn-secondary" href="https://www.biorxiv.org/content/10.1101/2020.07.30.229534v2.full" role="button">Read the Paper Here &raquo;</a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="./images/VR_Nerds.png" class="img-fluid" alt="Responsive image">
+        <rect width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+        <p>Here's a photo of me looking at our freshly built VR world through a Google Cardboard VR headset.</p>
+        <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Visit the Project Website &raquo;</a></p>
+      </div>
+    <br><br>
+    </div>
+
+    <hr>
+
+    <!-- The Bunny -->
+    <a id="bunny"></a>
     <div class="row">
       <div class="col-md-8 themed-grid-col"> 
         <h2>Self-Driving Pacing Car - "The Bunny"</h2> 
@@ -112,10 +176,14 @@
         </video>
         The Bunny being tested in it's early stages.  The laptop shows the image analysis and line tracking performed by the onboard navigation software.</p>
       </div>
+    
     </div>
   
+    <a id="rocket"></a> <!-- ID tag placed here to allow room for navbar -->
+    <div> <hr> </div> 
+
     <!-- Rocket -->
-    <div> <hr> </div> <!-- draws line across page -->
+    
     <div class="row">
       <div class="col-md-8 themed-grid-col"> 
         <h2>UBC Rocket Engineering Design Team</h2> 
@@ -150,41 +218,9 @@
       </div>
     </div>
 
-
-
-    <!-- HackSeq19-->
-    <div> <hr> </div>
-    <div class="row">
-      <div class="col-md-8 themed-grid-col">
-        <h2>Virtual Reality for Single-Cell Data Exploration </h2>
-        <p><b>October 2019 - HackSeq19 hackathon</b></p>
-        <p> Collaborated with Harvard researchers to visualize single-cell genomic data in virtual reality.</p> 
-        <p> 
-          Genomic sequencing is getting so accurate that researchers can now precisely determine the DNA sequence of a single cell.  By sequencing many cells individually, researchers can track the genetic differences between cells and between generations of cells.  But how on earth would you visualize this?  This is a new field of measurement, a mind-bending concept to visualize.
-
-          During the HackSeq19 hackathon, I worked with researchers from Harvard to figure out how to visualize this data in an intuitive and insightful way.   We brainstormed and tested many different concepts for this type of data visualization, and decided create a 3D graph that makes it easy to see defined cell lineages, as well as genetic outliers.
-
-          <br><br>
-          We used A-Frame as our VR framework, and the Harvard lab uses machine learning to group the cell genomes into lineages based on their DNA.  The goal is for researchers to upload their own datasets, and our software will map the data into a 3D space, enabling the viewer to explore, interact, and “walkthrough” the different cell lineages.  
-          Placing heavy emphasis on user experience throughout our development, we made sure that the VR world was easy to navigate from a laptop, phone, or VR headset. 
-          <br><br>
-          Our hackathon project was so successful, the Harvard lab continued to work on it and published a paper based about it!
-          
-          (You’ll find my name in the “Acknowledgements” section.) <br>
-          <a class="btn btn-secondary" href="https://www.biorxiv.org/content/10.1101/2020.07.30.229534v2.full" role="button">Read the Paper Here &raquo;</a>
-        </p>
-      
-      </div>
-      <div class="col-md-4">
-        <img src="./images/VR_Nerds.png" class="img-fluid" alt="Responsive image">
-        <rect width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-        <p>Here's a photo of me looking at our freshly built VR world through a Google Cardboard VR headset.</p>
-        <p><a class="btn btn-secondary" href="https://singlecellvr.herokuapp.com/" role="button">Visit the Project Website &raquo;</a></p>
-      </div>
-    <br><br>
-    </div>
     <hr>
-  </div> <!-- /end of container -->
+
+  </div> <!-- /end of projects container -->
 </main>
 
   <!-- FOOTER -->
